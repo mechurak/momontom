@@ -16,6 +16,10 @@ body {
   font-size: 40px;
 }
 
+.todo {
+  display: none;
+}
+
 .nameForm,
 .greetings {
   display: none;

@@ -8,42 +8,44 @@
 
   <body>
     <div class="momontom">
-      <div class="js-weather weather">        
-        <span class="weather__text"></span>
+      <div class="js-weather weather">
+        <span class="weather__text">??° @ somewhere</span>
       </div>
-      
+
       <div class="js-clock clock">
         <h1>00:00</h1>
       </div>
-      
+
       <form class="js-nameForm nameForm">
         <input type="text" placeholder="What is your name?" />
       </form>
       <h4 class="js-greetings greetings"></h4>
-      
-      <table>
-        <tr>
-          <td colspan="2" class="td__taskInput">
-            <form class="js-toDoForm">
-              <input type="text" placeholder="Add a task" />
-            </form>            
-          </td>                    
-        </tr>
-        <tr>
-          <td class="td__pending">
-            <div>
-              <h3>Pending</h3>
-              <ul id="js-pending"></ul>
-            </div>      
-          </td>
-          <td class="td__finished">
-            <div>
-              <h3>Finished</h3>
-              <ul id="js-finished"></ul>
-            </div>      
-          </td>
-        </tr>
-      </table>
+
+      <div class="js-todo todo">
+        <table>
+          <tr>
+            <td colspan="2" class="td__taskInput">
+              <form class="js-toDoForm">
+                <input type="text" placeholder="Add a task" />
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td class="td__pending">
+              <div>
+                <h3>Pending</h3>
+                <ul id="js-pending"></ul>
+              </div>
+            </td>
+            <td class="td__finished">
+              <div>
+                <h3>Finished</h3>
+                <ul id="js-finished"></ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <script src="src/clock.js"></script>
