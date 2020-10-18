@@ -4,14 +4,68 @@ body {
   color: white;
 }
 
+.momontom {
+  text-align: center;  
+}
+
+.weather {
+  text-align: right;
+}
+
+.clock {
+  font-size: 40px;
+}
+
 .nameForm,
 .greetings {
   display: none;
+  font-size: 20px;
 }
 
 .showing {
   display: block;
 }
+
+table {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+
+td {
+  width: 50%;
+  vertical-align: top;
+}
+
+.td__taskInput {
+  text-align: center;
+}
+
+.td__pending {
+  background-color: rgba(44, 62, 80,0.5);
+}
+
+.td__finished {
+  background-color: rgba(22, 160, 133, 0.5);
+}
+
+li span {
+  padding-right: 10px;
+}
+
+input {
+  background-color: rgba(44, 62, 80,0.5);
+  /* appearance: none; */
+  border: 0;
+  font-size: 20px;
+  color: white;
+  border: 2px solid white;
+}
+
+input::placeholder {
+  color: white;
+}
+
 
 @keyframes fadeIn {
   from {
@@ -27,7 +81,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   z-index: -1;
   animation: fadeIn 0.5s linear;
 }

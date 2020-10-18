@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Momontom</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
 
-<head>
-  <title>Momontom</title>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="src/styles.css" />
-</head>
+  <body>
+    <div class="momontom">
+      <div class="js-weather weather">        
+        <span class="weather__text"></span>
+      </div>
+      
+      <div class="js-clock clock">
+        <h1>00:00</h1>
+      </div>
+      
+      <form class="js-nameForm nameForm">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      
+      <table>
+        <tr>
+          <td colspan="2" class="td__taskInput">
+            <form class="js-toDoForm">
+              <input type="text" placeholder="Add a task" />
+            </form>            
+          </td>                    
+        </tr>
+        <tr>
+          <td class="td__pending">
+            <div>
+              <h3>Pending</h3>
+              <ul id="js-pending"></ul>
+            </div>      
+          </td>
+          <td class="td__finished">
+            <div>
+              <h3>Finished</h3>
+              <ul id="js-finished"></ul>
+            </div>      
+          </td>
+        </tr>
+      </table>
+    </div>
 
-<body>
-  <div class="js-clock">
-    <h1>00:00</h1>
-  </div>
-  <form class="js-nameForm nameForm">
-    <input type="text" placeholder="What is your name?" />
-  </form>
-  <h4 class="js-greetings greetings"></h4>
-  <form class="js-toDoForm">
-    <input type="text" placeholder="Add a task" />
-  </form>
-
-  <div>
-    <h3>Pending</h3>
-    <ul id="js-pending"></ul>
-  </div>
-  <div>
-    <h3>Finished</h3>
-    <ul id="js-finished"></ul>
-  </div>
-
-  <div class="js-weather weather">
-    <span class="weather__text"></span>
-  </div>
-
-  <script src="src/clock.js"></script>
-  <script src="src/greeting.js"></script>
-  <script src="src/todo.js"></script>
-  <script src="src/bg.js"></script>
-  <script src="src/weather.js"></script>
-</body>
-
+    <script src="src/clock.js"></script>
+    <script src="src/greeting.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/bg.js"></script>
+    <script src="src/weather.js"></script>
+  </body>
 </html>
